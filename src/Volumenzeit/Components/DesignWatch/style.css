@@ -1,0 +1,17 @@
+.design {
+  position: relative;
+  background: #745cff;
+  padding: 2rem;
+  color: white;
+}
+
+.design::before {
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: calc(50% - 12px); /* Center it */
+  width: 24px;
+  height: 24px;
+  background: #ffffff;
+  transform: rotate(50deg); /* Rotate square to make it look like a diamond */
+}

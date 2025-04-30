@@ -1,0 +1,19 @@
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px; /* Adjust the size of the icon */
+  height: 20px; /* Adjust the size of the icon */
+  cursor: pointer;
+}
+
+.bar {
+  background-color: #745cff; /* Set the color to #745cff */
+  height: 4px; /* Standard thickness */
+  transition: all 0.3s ease-in-out;
+}
+@media (min-width: 1020px) {
+  .hamburger-icon {
+    display: none;
+  }
+}

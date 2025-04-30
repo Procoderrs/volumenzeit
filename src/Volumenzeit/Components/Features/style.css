@@ -1,0 +1,71 @@
+.feature-block {
+  position: relative;
+}
+
+/* LEFT BLOCKS (7 shape) */
+.feature-block.left::before {
+  content: "";
+  position: absolute;
+  top: 105px; /* near the dot */
+  left: 245px; /* adjust spacing */
+  width: 50px;
+  height: 2px;
+  background-color: black; /* light purple line */
+}
+
+.feature-block.left::after {
+  content: "";
+  position: absolute;
+  top: 95px;
+  left: 320px; /* aligns with the start of ::before */
+  width: 2px;
+  height: 90px; /* length going downward */
+  background-color: black;
+  transform: rotate(-40deg);
+}
+
+/* RIGHT BLOCKS (flipped 7 shape) */
+.feature-block.right::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  right: 245px;
+  width: 40px;
+  height: 2px;
+  background-color: black;
+}
+
+.feature-block.right::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 310px;
+  width: 2px;
+  height: 80px;
+  background-color: black;
+  transform:  rotate(40deg);
+}
+
+
+.feature-block-2.left::before {
+  content: "";
+  position: absolute;
+  top: 150px; /* near the dot */
+  left: 250px; /* adjust spacing */
+  width: 50px;
+  height: 2px;
+  background-color: black; /* light purple line */
+}
+
+
+.feature-block-2.left::after {
+  content: "";
+  position: absolute;
+  top: 70px;
+  left: 327px; /* aligns with the start of ::before */
+  width: 2px;
+  height: 90px; /* length going downward */
+  background-color: black;
+  transform: rotate(40deg);
+
+}
