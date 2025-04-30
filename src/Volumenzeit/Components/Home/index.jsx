@@ -17,7 +17,7 @@ function Home() {
   }, []);
 
   return (
-<div id="home" className="min-h-screen bg-pink-500 flex flex-col md:flex-row items-center justify-center px-4 font-poppins">
+<div id="home" className="min-h-screen  flex flex-col md:flex-row items-center justify-center px-4 font-poppins">
       
 
       {/* Text and Button Section */}
