@@ -1,4 +1,4 @@
-import bg from '../images/bg.jpg'; // ✅ Correct import
+import bg from '../Images/bg.jpg'; 
 
 function Chance() {
   return (
