@@ -1,16 +1,26 @@
 import watchFeatures from "../Images/watchFeatures.png";
 import circle from "../Images/circles.svg";
 import './style.css'
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 function Features() {
+
+ useEffect(() => {
+		AOS.init({
+			duration: 500, // animation duration
+			once: true,     // animate only once
+		});
+	}, []);
+
 	return (
-		<div id="features" className=" mx-auto font-poppins  py-12 flex flex-col px-4 items-center ">
-			<h1 className="text-3xl font-bold mb-8">Features</h1>
+		<div id="features" className="  font-poppins w-full max-w-[1440px] mx-auto overflow-hidden  py-12 flex flex-col px-4 items-center ">
+			<h1 className="text-3xl font-orbitron  font-bold mb-8" data-aos="fade-up">Features</h1>
 
       <div className="relative">
 
       {/* small screen img displayed  */}
-					<div className=" flex-col sm:sticky  lg:hidden  lg:relative sm:top-[20%]  w-64 h-64 flex items-center shadow-[none] justify-center">
+					<div className=" flex-col sm:sticky  lg:hidden  lg:relative sm:top-[20%]  w-64 h-64 flex items-center shadow-[none] justify-center" data-aos="fade-up" data-aos-once="false" >
 						{/* Circle background */}
 						<img
 							src={circle}
@@ -44,8 +54,8 @@ function Features() {
 
     {/* individual styles div  */}
 
-					<div className="  flex flex-col mb-8 items-center">
-						<div className="relative flex items-center justify-center w-7 h-7 rounded-full border-4 border-[#e5e0ff]">
+					<div className="  flex flex-col mb-8 items-center " data-aos="fade-right" data-aos-once="false">
+						<div className="relative flex items-center justify-center w-7 h-7 rounded-full border-4 border-[#e5e0ff]" >
 							{/* Inner smaller circle */}
 							<div className="flex items-center justify-center w-5 h-5 rounded-full border-4 border-[#e5e0ff]">
 								{/* Center dot */}
@@ -66,7 +76,7 @@ function Features() {
 
 
         {/*  Features div */}
-					<div className=" flex flex-col mb-8 items-center">
+					<div className=" flex flex-col mb-8 items-center" data-aos="fade-left" data-aos-once="false">
 						<div className="relative flex items-center justify-center w-7 h-7 rounded-full border-4 border-[#e5e0ff]">
 							{/* Inner smaller circle */}
 							<div className="flex items-center justify-center w-5 h-5 rounded-full border-4 border-[#e5e0ff]">
@@ -98,7 +108,7 @@ function Features() {
 
 
           {/* Qualitycomponents */}
-					<div className=" flex flex-col items-center">
+					<div className=" flex flex-col items-center" data-aos="fade-right" data-aos-delay="50" data-aos-once="false">
 						<div className="relative flex items-center justify-center w-7 h-7 rounded-full border-4 border-[#e5e0ff]">
 							{/* Inner smaller circle */}
 							<div className="flex items-center justify-center w-5 h-5 rounded-full border-4 border-[#e5e0ff]">
@@ -135,7 +145,7 @@ function Features() {
 		
     <div className="flex relative flex-col gap-8 max-w-xs">
 		
-      <div className="feature-block left">
+      <div className="feature-block left" data-aos="fade-left" data-aos-once="false">
 			
 							<div className="flex gap-6">
 
@@ -155,7 +165,7 @@ function Features() {
         </div>
       </div>
 
-      <div className="feature-block-2 relative  left ">
+      <div className="feature-block-2 relative   left "  data-aos="fade-left" data-aos-once="false">
 
 			
         <h1 className="text-2xl mb-4">Features</h1>
@@ -177,7 +187,7 @@ function Features() {
     </div>
 
     {/* Center Image — now larger and centered */}
-    <div className="relative w-[400px] h-[400px] flex items-center justify-center shrink-0 curved-line curved-dot left-dot right-dot">
+    <div className="relative w-[400px] h-[400px] flex items-center justify-center shrink-0 curved-line curved-dot left-dot right-dot" data-aos="fade-up" data-aos-once="false">
       <img
         src={circle}
         alt="circle"
@@ -191,7 +201,7 @@ function Features() {
     </div>
 
     {/* Right Column */}
-    <div className="flex feature-block right relative flex-col max-w-xs">
+    <div className="flex feature-block right relative  flex-col max-w-xs" data-aos="fade-left" data-aos-once="false">
       <h1 className="text-2xl mb-4">High Quality Components</h1>
 			<div className="flex  relative top-[-70px] left-[-50px]  items-center justify-center w-5 h-5 rounded-full border-4 border-[#e5e0ff]">
 								{/* Center dot */}

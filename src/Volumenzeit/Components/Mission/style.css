@@ -1,0 +1,15 @@
+.image-fade-right {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-fade-right::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px; /* Width of the fading area */
+  height: 100%;
+  background: linear-gradient(to left, black, rgba(255, 255, 255, 0));
+  pointer-events: none;
+}

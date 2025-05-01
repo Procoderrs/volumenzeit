@@ -21,47 +21,50 @@ const	settings = {
     infinite: false,
     speed: 800,
     slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToScroll: 1,
     initialSlide: 0,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToShow: 2,
+          slidesToScroll: 1,
           infinite: true,
           dots: true
         }
       },
       {
-        breakpoint: 600,
+        breakpoint: 768,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
+          slidesToShow: 1,
+          slidesToScroll: 1,
           initialSlide: 0,
         }
       },
-      {
+      /* {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1
         }
-      }
+      } */
     ]
   };
 
 	const WatchCard = ({ img, price, volumenzeit }) => (
-		<div className="bg-[#f0f3fa] max-w-[300px] text-center py-4   px-2 flex flex-col gap-3 rounded-md">
+		
+		<div className=" "  data-aos="fade-up"     data-aos-once="false">
+			<div className="bg-[#f0f3fa]  mx-auto max-w-[300px] text-center py-4   px-2 flex flex-col gap-3 rounded-md">
 			<img
 				src={img}
 				alt={volumenzeit}
-				className="mx-auto h-56 object-contain"
+				className="mx-auto  object-contain"
 			/>
 			<div className="mt-4 font-poppins">
 				<p className="text-[#949494]">{volumenzeit}</p>
 				<p className="mt-2 text-xl text-black">{price}</p>
 			</div>
+		</div>
 		</div>
 	);
 
@@ -82,21 +85,22 @@ const	settings = {
 			<div className="flex justify-center items-center gap-4 mt-6">
 				<button
 					onClick={() => sliderRef.current?.slickPrev()}
-					className="bg-gray-200 p-2 rounded-full hover:bg-gray-300"
-				>
+					className="bg-gray-200 p-2 rounded-full hover:bg-gray-300" data-aos="fade-right">
 					<ChevronLeft />
 				</button>
 				<button
 					onClick={() => sliderRef.current?.slickNext()}
-					className="bg-gray-200 p-2 rounded-full hover:bg-gray-300"
-				>
+					className="bg-gray-200 p-2 rounded-full hover:bg-gray-300" data-aos="fade-right"     data-aos-once="false"
+					>
 					<ChevronRight />
 				</button>
-			</div>
 
-			<button className="text-white bg-[#745cff] font-poppins mt-6 px-6 py-2 rounded hover:bg-gray-800">
+				<button className="text-white bg-[#745cff] font-poppins  px-6 py-2 rounded hover:bg-gray-800" data-aos="fade-right"     data-aos-once="false">
 				Design Your Watch
 			</button>
+			</div>
+
+			
 		</div>
 	);
 }

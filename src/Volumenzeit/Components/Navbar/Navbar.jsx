@@ -31,9 +31,12 @@ function Navbar() {
 	}
 
 	return (
-		<div className="max-w-full mx-auto  z-[1000] shadow-xl bg-white sticky top-0  px-4 md:px-12 py-4 ">
+		<div className=" bg-white sticky z-[20000]  shadow-xl top-0">
+
+		
+		<div className="  w-full max-w-[1440px] mx-auto  bg-white  overflow-hidden z-[1000]   px-4 md:px-12 py-4 ">
 			{/* Top part */}
-			<div className="flex justify-between items-center mx-auto">
+			<div className="flex justify-between  items-center  w-full">
 				<Link to="/">
 					<img src={logo} alt="logo" className="md:h-9 h-6" />
 				</Link>
@@ -62,7 +65,7 @@ function Navbar() {
 				</div>
 
 				{/* Mobile menu (Hamburger and Button) */}
-				<div className="lg:hidden flex gap-5 items-center">
+				<div className="lg:hidden flex gap-5 items-center ">
 					<div className="hidden sm:block">
 						<Button text='Sign up' />
 					</div>
@@ -103,6 +106,7 @@ function Navbar() {
 			{isMenuOpen && (
 				<div className="fixed inset-0 z-40" onClick={handleMenuToggle}></div>
 			)}
+		</div>
 		</div>
 	);
 }

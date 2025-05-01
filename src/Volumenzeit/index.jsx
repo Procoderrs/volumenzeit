@@ -11,8 +11,9 @@ import Footer from './Components/Footer';
 function Volumenzeit() {
   return (
     <div>
-      <Navbar/>
-       <Home/> 
+       <Navbar/> 
+
+                <Home/> 
       <Features heading='FEATURES'
 
         p='Volumenzeit gives you a total of 48 style combinations 
