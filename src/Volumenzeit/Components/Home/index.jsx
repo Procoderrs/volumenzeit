@@ -54,8 +54,10 @@ function Home() {
           src={watch}
           alt="Watch"
           className="absolute right-0 top-[-80px] w-auto h-[120%] object-contain origin-top-right"
+          data-aos="zoom-in-up"
           style={{
             transform: 'translateX(25%) '
+            
           }}
         />
       </div>
