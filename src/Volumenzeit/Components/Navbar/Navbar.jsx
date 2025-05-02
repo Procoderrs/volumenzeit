@@ -31,10 +31,10 @@ function Navbar() {
 	}
 
 	return (
-		<div className=" bg-white sticky z-[20000]  shadow-xl top-0">
+		<div className=" bg-[#fafbff] sticky z-[20000]  top-0">
 
 		
-		<div className="  w-full max-w-[1440px] mx-auto  bg-white  overflow-hidden z-[1000]   px-4 md:px-12 py-4 ">
+		<div className="  w-full max-w-[1440px] mx-auto  bg-[#fafbff]  overflow-hidden z-[1000]   px-4 md:px-12 py-4 ">
 			{/* Top part */}
 			<div className="flex justify-between  items-center  w-full">
 				<Link to="/">
