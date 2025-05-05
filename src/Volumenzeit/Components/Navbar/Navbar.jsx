@@ -31,19 +31,19 @@ function Navbar() {
 	}
 
 	return (
-		<div className=" bg-[#fafbff] sticky z-[20000]  top-0">
+		<div className=" bg-[#fafbff] sticky z-[20000] shadow-lg   top-0">
 
 		
-		<div className="  w-full max-w-[1440px] mx-auto  bg-[#fafbff]  overflow-hidden z-[1000]   px-4 md:px-12 py-4 ">
+		<div className="  w-full max-w-[1440px]  mx-auto  bg-[#fafbff]  overflow-hidden z-[1000]     py-4 ">
 			{/* Top part */}
-			<div className="flex justify-between  items-center  w-full">
+			<div className="flex justify-between px-4     items-center  w-full">
 				<Link to="/">
-					<img src={logo} alt="logo" className="md:h-9 h-6" />
+					<img src={logo} alt="logo" className="md:h-[34px] h-6" />
 				</Link>
 
 				{/* Desktop menu */}
-				<div className="hidden lg:flex items-center gap-10 font-poppins">
-					<ul className="flex items-center  gap-8 text-[#745cff] text-[15px]">
+				<div className="hidden lg:flex items-center gap-10  font-poppins">
+					<ul className="flex items-center    gap-8 text-[#745cff] text-[14px]">
 						{navLinks.map((item) => (
 							<li key={item.id}>
 								<button
@@ -52,18 +52,18 @@ function Navbar() {
 										activeSection === item.id
 											? "text-black border-b-2 border-[#745cff] cursor-pointer"
 											: "text-[#949494]"
-									} hover:text-black hover:border-b-2 hover:border-[#745cff] cursor-pointer pb-1 transition-all ease-in-out  duration-300`}
+									} hover:text-black hover:border-b-2 border-[#745cff] cursor-pointer pb-1 transition-all ease-in-out  duration-300`}
 								>
 									{item.name}
 								</button>
 							</li>
 						))}
 					</ul>
-					<div>
+					
+				</div>
+				<div className="hidden lg:block">
 						<Button text='Sign up' />
 					</div>
-				</div>
-
 				{/* Mobile menu (Hamburger and Button) */}
 				<div className="lg:hidden flex gap-5 items-center ">
 					<div className="hidden sm:block">
@@ -81,7 +81,7 @@ function Navbar() {
 					isMenuOpen ? "translate-x-0" : "-translate-x-full"
 				} transition-transform duration-500 ease-in-out z-50`}
 			>
-				<ul className="flex flex-col items-center pl-6 space-y-6 text-[#745cff] text-[24px] font-semibold">
+				<ul className="flex flex-col items-center text-center px-6  w-full space-y-6 text-[#745cff] text-[24px] font-semibold">
 					{navLinks.map((item) => (
 						<li key={item.id}>
 							<button

@@ -1,232 +1,149 @@
 import watchFeatures from "../Images/watchFeatures.png";
 import circle from "../Images/circles.svg";
-import './style.css'
+import './style.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
-function Features() {
 
- useEffect(() => {
-		AOS.init({
-			duration: 500, // animation duration
-			once: true,     // animate only once
-		});
-	}, []);
+// Content Data
+const individualStyleContent = (
+  <>
+    <p>48 style combinations</p>
+    <p>Color shifting Dial Color</p>
+    <p>15 Strap options</p>
+    <p>Custom Strap Engraving</p>
+  </>
+);
 
-	return (
-		<div id="features" className="  font-poppins w-full max-w-[1440px] mx-auto overflow-hidden  py-12 flex flex-col px-4 items-center ">
-			<h1 className="text-3xl font-orbitron  font-bold mb-8" data-aos="fade-up">Features</h1>
+const featuresContent = (
+  <>
+    <p>Case size: 42mm</p>
+    <p>Case Color: Silver, Black, Blue, chamfered</p>
+    <p>brush with mirror polish</p>
+    <p>Dial Color: Black Metallic</p>
+    <p>Blue-Purple Water Resistance: 5 ATM/50 meters</p>
+    <p>Straps: Quick release</p>
+    <p>Movement: Swiss Parts RONDA 762E</p>
+    <p>Instantaneous rate -10/ +20 sec/month</p>
+    <p>Standard Battery life: 10 years</p>
+  </>
+);
 
-      <div className="relative">
+const qualityContent = (
+  <>
+    <p>Case size: 316L Stainless-Steel</p>
+    <p>Coating: Color anodized anti-scratch</p>
+    <p>Glass: Sapphire Crystal</p>
+    <p>Straps: 22mm Stainless-steel bracelet</p>
+    <p>Straps: Quick release</p>
+    <p>Bracelet, Leather</p>
+  </>
+);
 
-      {/* small screen img displayed  */}
-					<div className=" flex-col sm:sticky  lg:hidden  lg:relative sm:top-[20%]  w-64 h-64 flex items-center shadow-[none] justify-center" data-aos="fade-up" data-aos-once="false" >
-						{/* Circle background */}
-						<img
-							src={circle}
-							alt="circle"
-							className="absolute w-full h-full object-cover"
-						/>
-
-						{/* Watch inside the circle */}
-						<img
-							src={watchFeatures}
-							alt="watch"
-							className="w-36 h-36 object-contain"
-						/>
-					</div>
-
-
-
-				</div>
-
-
-
-
-
-			{/* Circle with Watch inside first div */}
-			<div className="flex flex-col items-center px-4 text-center  lg:hidden     md:flex-row">
-				
-        
-       
-
-
-
-    {/* individual styles div  */}
-
-					<div className="  flex flex-col mb-8 items-center " data-aos="fade-right" data-aos-once="false">
-						<div className="relative flex items-center justify-center w-7 h-7 rounded-full border-4 border-[#e5e0ff]" >
-							{/* Inner smaller circle */}
-							<div className="flex items-center justify-center w-5 h-5 rounded-full border-4 border-[#e5e0ff]">
-								{/* Center dot */}
-								<div className="w-3 h-3 rounded-full bg-purple-600"></div>
-							</div>
-						</div>
-						<div className=" mt-2  font-poppins flex flex-col items-center">
-							<h1 className="text-2xl mb-4">Individual Style</h1>
-							<div className="text-[10px] leading-5 font-poppins text-[#c2c2c2]">
-								<p>48 style combinantions</p>
-								<p>Color shifting Dial Color</p>
-								<p> 15 Strap options</p>
-								<p>Custom Strap Engraving</p>
-							</div>
-						</div>
-					</div>
-
-
-
-        {/*  Features div */}
-					<div className=" flex flex-col mb-8 items-center" data-aos="fade-left" data-aos-once="false">
-						<div className="relative flex items-center justify-center w-7 h-7 rounded-full border-4 border-[#e5e0ff]">
-							{/* Inner smaller circle */}
-							<div className="flex items-center justify-center w-5 h-5 rounded-full border-4 border-[#e5e0ff]">
-								{/* Center dot */}
-								<div className="w-3 h-3 rounded-full bg-purple-600"></div>
-							</div>
-						</div>
-						<div className="  mt-2 font-poppins flex flex-col items-center">
-							<h1 className="text-2xl mb-4">Features</h1>
-							<div className="text-[10px] text-center leading-5 flex flex-col items-center font-poppins text-[#c2c2c2]">
-								<p>Case size: 42mm</p>
-								<p>
-									Case Color: Silver, Black, Blue, chamfered brush with mirror
-									polish
-								</p>
-								<p>
-									{" "}
-									Dial Color: Black Metallic, Color shifting Blue-Purple,
-									Green-Purple, Pink-Gold
-								</p>
-								<p>Water Resistance: 5 ATM/50 meters</p>
-								<p>Straps: Quick release</p>
-								<p>Movement: Swiss Parts RONDA 762E</p>
-								<p>Instantaneous rate -10/ +20 sec/month</p>
-								<p>Standard Battery life: 10 years</p>
-							</div>
-						</div>
-					</div>
-
-
-          {/* Qualitycomponents */}
-					<div className=" flex flex-col items-center" data-aos="fade-right" data-aos-delay="50" data-aos-once="false">
-						<div className="relative flex items-center justify-center w-7 h-7 rounded-full border-4 border-[#e5e0ff]">
-							{/* Inner smaller circle */}
-							<div className="flex items-center justify-center w-5 h-5 rounded-full border-4 border-[#e5e0ff]">
-								{/* Center dot */}
-								<div className="w-3 h-3 rounded-full bg-purple-600"></div>
-							</div>
-						</div>
-						<div className="  mt-2 font-poppins flex flex-col items-center">
-							<h1 className="text-2xl mb-4">High Quality Components</h1>
-							<div className="text-[10px] text-center leading-5 flex flex-col items-center font-poppins text-[#c2c2c2]">
-								<p>Case size: 316L Stainless-Steel</p>
-								<p>Coating: Color anodized anti-scratch</p>
-								<p> Glass: Sapphire Crystal</p>
-								<p>Straps: 22mm Stainless-steel bracelet, Milanese Mesh</p>
-								<p>Straps: Quick release</p>
-								<p>bracelet, Leather</p>
-							</div>
-						</div>
-					</div>
-				
-
-				
-			</div>
-
-
-{/* Desktop screen */}
-
-{/* Desktop screen only: 3-column layout with image in the middle */}
-{/* Desktop screen only: Centered large image with side content */}
-<div className="hidden lg:flex w-full justify-center py-12">
-  <div className="w-full max-w-5xl mx-auto px-4 lg:px-12 flex items-center justify-center gap-12">
-
-    {/* Left Column */}
-		
-    <div className="flex relative flex-col gap-8 max-w-xs">
-		
-      <div className="feature-block left" data-aos="fade-left" data-aos-once="false">
-			
-							<div className="flex gap-6">
-
-							
-        <h1 className="  text-2xl mb-4">Individual Style</h1>
-				<div className="flex  relative top-[95px] left-[30px]  items-center justify-center w-5 h-5 rounded-full border-4 border-[#e5e0ff]">
-								{/* Center dot */}
-								<div className="w-3 h-3 rounded-full bg-purple-600"></div>
-							</div>
-
-       </div>
-        <div className="text-[10px] leading-5 font-poppins text-[#c2c2c2]">
-          <p>48 style combinations</p>
-          <p>Color shifting Dial Color</p>
-          <p>15 Strap options</p>
-          <p>Custom Strap Engraving</p>
-        </div>
-      </div>
-
-      <div className="feature-block-2 relative   left "  data-aos="fade-left" data-aos-once="false">
-
-			
-        <h1 className="text-2xl mb-4">Features</h1>
-				<div className="flex  relative top-[90px] left-[230px]  items-center justify-center w-5 h-5 rounded-full border-4 border-[#e5e0ff]">
-								{/* Center dot */}
-								<div className="w-3 h-3 rounded-full bg-purple-600"></div>
-							</div>
-        <div className="text-[10px] leading-5 font-poppins text-[#c2c2c2]">
-          <p>Case size: 42mm</p>
-          <p>Case Color: Silver, Black, Blue, chamfered brush with mirror polish</p>
-          <p>Dial Color: Black Metallic, Color shifting Blue-Purple, Green-Purple, Pink-Gold</p>
-          <p>Water Resistance: 5 ATM/50 meters</p>
-          <p>Straps: Quick release</p>
-          <p>Movement: Swiss Parts RONDA 762E</p>
-          <p>Instantaneous rate -10/ +20 sec/month</p>
-          <p>Standard Battery life: 10 years</p>
-        </div>
+// FeatureBlock Component
+const FeatureBlock = ({ title, content, position, side }) => (
+  <div className={`feature-block ${side} relative`} data-aos="fade-left">
+    <div className={`absolute ${position}`}>
+      <div className="feature-dot">
+        <div className="inner-dot" />
       </div>
     </div>
-
-    {/* Center Image — now larger and centered */}
-    <div className="relative w-[400px] h-[400px] flex items-center justify-center shrink-0 curved-line curved-dot left-dot right-dot" data-aos="fade-up" data-aos-once="false">
-      <img
-        src={circle}
-        alt="circle"
-        className="absolute w-full h-full object-contain"
-      />
-      <img
-        src={watchFeatures}
-        alt="watch"
-        className="w-48 z-10 object-contain"
-      />
-    </div>
-
-    {/* Right Column */}
-    <div className="flex feature-block right relative  flex-col max-w-xs" data-aos="fade-left" data-aos-once="false">
-      <h1 className="text-2xl mb-4">High Quality Components</h1>
-			<div className="flex  relative top-[-70px] left-[-50px]  items-center justify-center w-5 h-5 rounded-full border-4 border-[#e5e0ff]">
-								{/* Center dot */}
-								<div className="w-3 h-3 rounded-full bg-purple-600"></div>
-							</div>
-      <div className="text-[10px] leading-5 font-poppins text-[#c2c2c2]">
-        <p>Case size: 316L Stainless-Steel</p>
-        <p>Coating: Color anodized anti-scratch</p>
-        <p>Glass: Sapphire Crystal</p>
-        <p>Straps: 22mm Stainless-steel bracelet, Milanese Mesh</p>
-        <p>Straps: Quick release</p>
-        <p>Bracelet, Leather</p>
+    <div className="px-28 font-poppins text-center flex flex-col items-center justify-center">
+      <h2 className="feature-title text-lg mb-4 relative">
+        {title}
+      </h2>
+      <div className="text-[10px] font-poppins max-w-[300px] leading-5 text-[#939393]">
+        {content}
       </div>
     </div>
-
   </div>
-</div>
+);
 
+// Main Component
+function Features() {
+  useEffect(() => {
+    AOS.init({ duration: 500, once: true });
+  }, []);
 
+  const getFeatureContent = (title) => {
+    switch(title) {
+      case 'Individual Style': return individualStyleContent;
+      case 'Features': return featuresContent;
+      case 'High Quality Components': return qualityContent;
+      default: return null;
+    }
+  };
 
+  return (
+    <div className="py-12">
+      <div id="features" className="font-poppins w-full max-w-[1440px] mx-auto flex flex-col px-4 items-center">
+        <h2 className="md:text-[40px] text-[28px]  font-Space" data-aos="fade-up">Features</h2>
 
+        {/* Mobile View */}
+        <div className="xxl:hidden ">
+          <div className="relative flex flex-col md:flex-row xs:items-center">
+            <div className="relative w-[350px] px-12 md:sticky md:top-[-200px]  mt-24 h-68 flex items-center justify-center md:mt-0" data-aos="fade-up">
+              <img src={circle} alt="circle" className="absolute w-full  object-cover animate-spin-slow" />
+              <img src={watchFeatures} alt="watch" className="w-48 h-48 object-contain" />
+            </div>
 
+            <div className="  space-y-12">
+              {['Individual Style', 'Features', 'High Quality Components'].map((title, idx) => (
+                <div key={title} className="flex  mt-24 flex-col items-center" data-aos={`fade-${idx % 2 === 0 ? 'right' : 'left'}`}>
+                  <div className="feature-dot">
+                    <div className="inner-dot" />
+                  </div>
+                  <h2 className="feature-title-mobile text-[18px] mb-4 mt-4  relative">
+                    {title}
+                  </h2>
+                  <div className="text-[10px] leading-5 text-[#939393] text-center">
+                    {getFeatureContent(title)}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
 
-		</div>
-	);
+        {/* Desktop View */}
+        <div className="hidden xxl:flex w-full justify-center relative py-12 min-h-[600px] items-center">
+          <div className="relative w-full gap-16  flex items-center justify-between">
+            {/* Background Elements */}
+            <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px]">
+              <img src={circle} alt="circle" className="w-full h-full object-contain animate-spin-slow opacity-70" />
+              <img src={watchFeatures} alt="watch" className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[340px] z-10" />
+            </div>
+
+            {/* Left Features */}
+            <div className="flex flex-col gap-16 z-20 mr-auto">
+              <FeatureBlock 
+                title="Individual Style" 
+                content={individualStyleContent}
+                position="right-[130px]  top-[2px]"
+                side="left-1"
+              />
+              <FeatureBlock
+                title="High Quality Components"
+                content={qualityContent}
+                position="right-[130px] top-1/2 "
+                side="left-2"
+              />
+            </div>
+
+            {/* Right Features */}
+            <div className="flex flex-col gap-16 z-20 ml-auto">
+              <FeatureBlock
+                title="Features"
+                content={featuresContent}
+                position="left-[150px] "
+                side="right"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }
 
 export default Features;

@@ -10,7 +10,7 @@
 .step {
   position: relative;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 150px;
 }
 
 .step::before {
@@ -35,7 +35,7 @@
   height: 50px;
   border-radius: 50%;
   background: #745dff;
-  border: 2px solid white;
+  border: 1px solid white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -53,20 +53,21 @@
   left: 50%;
   transform: translateX(-50%);
   width: 1px;
-  height: 100px;
+  height: 50px;
   background: white;
   z-index: 20;
 }
 
-.step:last-child::after {
+.step-container > .step:last-of-type::after{
   display: none;
 }
 
 .step p {
-  margin-top: 110px;
+  margin-top: -20px;
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 200;
   z-index: 50;
+  font-family: 'poppins';
 }
 
 
@@ -88,16 +89,18 @@
   /* Horizontal line between steps */
   .step::after {
     top: 40px;
-    left: 100%;
+    left: 110%;
     transform: none;
-    width: 150px;
-    height: 2px;
+    width: 320px;
+    height: 1px;
     background: white;
   }
 
-  .step:last-child::after {
+  .step-container > .step:last-of-type::after{
     display: none;
   }
+
+  
 
   .step::before {
     left: 50%;
@@ -109,6 +112,7 @@
   }
 
   .step p {
-    margin-top: 80px;
+    margin-top: 100px;
+    font-family: 'poppins';
   }
 }

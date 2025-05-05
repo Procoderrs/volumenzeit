@@ -3,23 +3,23 @@
 }
 
 /* LEFT BLOCKS (7 shape) */
-.feature-block.left::before {
+.feature-block.left-1::before {
   content: "";
   position: absolute;
-  top: 105px; /* near the dot */
-  left: 245px; /* adjust spacing */
-  width: 50px;
-  height: 2px;
+  top: 11.5px; /* near the dot */
+  left: 320px; /* adjust spacing */
+  width: 47px;
+  height: 1px;
   background-color: black; /* light purple line */
 }
 
-.feature-block.left::after {
+.feature-block.left-1::after {
   content: "";
   position: absolute;
-  top: 95px;
-  left: 320px; /* aligns with the start of ::before */
-  width: 2px;
-  height: 90px; /* length going downward */
+  top: -1px;
+  left: 400px; /* aligns with the start of ::before */
+  width: 1px;
+  height: 109px; /* length going downward */
   background-color: black;
   transform: rotate(-40deg);
 }
@@ -28,44 +28,77 @@
 .feature-block.right::before {
   content: "";
   position: absolute;
-  top: 20px;
-  right: 245px;
-  width: 40px;
-  height: 2px;
+  top: 10px;
+  right: 300px;
+  width: 50px;
+  height: 1px;
   background-color: black;
 }
 
 .feature-block.right::after {
   content: "";
   position: absolute;
-  top: 10px;
-  right: 310px;
-  width: 2px;
-  height: 80px;
+  top:0px;
+  right: 381px;
+  width: 1px;
+  height: 110px;
   background-color: black;
-  transform:  rotate(40deg);
+
+  transform:  rotate(35deg);
 }
 
 
-.feature-block-2.left::before {
+.feature-block.left-2::before {
   content: "";
   position: absolute;
-  top: 150px; /* near the dot */
-  left: 250px; /* adjust spacing */
-  width: 50px;
-  height: 2px;
+  top: 93px; /* near the dot */
+  left: 320px; /* adjust spacing */
+  width: 45px;
+  height: 1px;
   background-color: black; /* light purple line */
 }
 
 
-.feature-block-2.left::after {
+.feature-block.left-2::after {
   content: "";
   position: absolute;
-  top: 70px;
-  left: 327px; /* aligns with the start of ::before */
-  width: 2px;
-  height: 90px; /* length going downward */
+  top: 24px;
+  left: 388.5px; /* aligns with the start of ::before */
+  width: 1px;
+  height: 80px; /* length going downward */
   background-color: black;
   transform: rotate(40deg);
 
 }
+
+/* Purple Circles */
+
+
+
+
+
+
+
+
+
+
+
+/* Dots */
+.feature-dot {
+  width: 20px;
+  height: 20px;
+  border: 4px solid #E5E0FF;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inner-dot {
+  width: 12px;
+  height: 12px;
+  background: #745cff;
+  border-radius: 50%;
+  left:200px
+}
+

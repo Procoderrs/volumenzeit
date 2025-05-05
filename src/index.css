@@ -9,3 +9,10 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+
+@font-face {
+  font-family: 'Space Age';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Space Age'), url('/fonts/space-age.woff') format('woff');
+  }
