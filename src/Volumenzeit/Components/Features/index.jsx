@@ -80,7 +80,7 @@ function Features() {
         <h2 className="md:text-[40px] text-[28px]  font-Space" data-aos="fade-up">Features</h2>
 
         {/* Mobile View */}
-        <div className="xxl:hidden ">
+        <div className="xl:hidden ">
           <div className="relative flex flex-col md:flex-row xs:items-center">
             <div className="relative w-[350px] px-12 md:sticky md:top-[-200px]  mt-24 h-68 flex items-center justify-center md:mt-0" data-aos="fade-up">
               <img src={circle} alt="circle" className="absolute w-full  object-cover animate-spin-slow" />
@@ -106,7 +106,7 @@ function Features() {
         </div>
 
         {/* Desktop View */}
-        <div className="hidden xxl:flex w-full justify-center relative py-12 min-h-[600px] items-center">
+        <div className="hidden xl:block :flex w-full justify-center relative py-12 min-h-[600px] items-center">
           <div className="relative w-full gap-16  flex items-center justify-between">
             {/* Background Elements */}
             <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px]">
