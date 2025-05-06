@@ -13,17 +13,17 @@ function Volumenzeit() {
     <div>
        <Navbar/> 
 
-                <Home/> 
-      <Features heading='FEATURES'
+               <Home/> 
+       <Features heading='FEATURES' 
 
         p='Volumenzeit gives you a total of 48 style combinations 
         with 4 dial types, 4 dial colors, 3 case colors, multiple 
         stylish strap combinations,
-         and customized engraving options.'/>
-    <DesignWatch/>
+         and customized engraving options.'/> 
+     <DesignWatch/>
     <Mission/>
-    <Watches/>
-    <AboutUs/>
+     <Watches/>
+   <AboutUs/>  
     <Chance/>
     <Footer/>
     </div>

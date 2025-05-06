@@ -36,7 +36,7 @@ function AboutUs() {
 },[isVideoPlaying])
 
   return (
-    <div id='about' className="px-4 w-full max-w-[1440px] mx-auto overflow-hidden md:px-24 py-12 justify-between flex flex-col items-center md:flex-col lg:flex-row">
+    <div id='about' className="px-4 w-full max-w-[1440px] mx-auto overflow-hidden md:px-8 py-12 justify-between flex flex-col items-center md:flex-col lg:flex-row">
       <div className='flex-1 '>
         <h2 className="font-Space md:text-[42px] text-[28px] text-center sm:text-start md:text-center lg:text-start  mb-2" data-aos="fade-right">ABOUT US</h2>
         <p className="text-[14px] text-center sm:text-start mt-6 sm:max-w-[400px] lg:max-w-[450px] md:max-w-[600px] leading-9 sm:leading-7 text-[#939393] font-poppins" data-aos="fade-right">

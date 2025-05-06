@@ -50,7 +50,7 @@ const	settings = {
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1,
           initialSlide: 0,
         }
@@ -64,20 +64,29 @@ const	settings = {
           initialSlide: 0,
         }
       },
-      /* {
-        breakpoint: 480,
+
+			
+       {
+        breakpoint: 640,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1
         }
-      } */
+      } ,
+			{
+				breakpoints:320,
+				settings:{
+					slidesToShow:1,
+					slidesToScroll:1,
+				}
+			}
     ]
   };
 
 	const WatchCard = ({ img, price, volumenzeit }) => (
 		
-		<div className=" "  data-aos="fade-up"     data-aos-once="false">
-			<div className="bg-[#f0f3fa]  mx-auto max-w-[320px]   text-center py-4    flex flex-col gap-3 rounded-md">
+		<div className="  "  data-aos="fade-up"     data-aos-once="false">
+			<div className="bg-[#f0f3fa]   mx-auto max-w-[280px]   text-center py-4    flex flex-col gap-3 rounded-md">
 			<img
 				src={img}
 				alt={volumenzeit}
@@ -106,19 +115,19 @@ const	settings = {
 			</Slider>
 
 			{/* Navigation Buttons */}
-			<div className="flex justify-between items-center flex-col md:flex-row  gap-4 mt-6">
+			<div className="flex justify-between items-center max-w-[90vw] mx-auto flex-col md:flex-row px-2  gap-4 mt-6">
 
-			<div>
+			<div className=' flex gap-2'>
 			<button
 					onClick={() => sliderRef.current?.slickPrev()}
 					className=" p-2 rounded-full  " data-aos="fade-right">
-					<img src={leftArrow} alt="leftArrow" className="transition-transform duration-300 hover:scale-95 w-[70px] h-auto" />
+					<img src={leftArrow} alt="leftArrow" className="transition-transform duration-300 hover:scale-95 w-12 md:w-16 h-auto" />
 				</button>
 				<button
 					onClick={() => sliderRef.current?.slickNext()}
 					className=" p-2 rounded-full "  data-aos="fade-right"     data-aos-once="false"
 					>
-					<img src={rightArrow} alt="rightArrow" className="transition-transform duration-300 hover:scale-95 w-[70px] h-auto" />
+					<img src={rightArrow} alt="rightArrow" className="transition-transform duration-300 hover:scale-95 w-12 md:w-16 h-auto" />
 				</button>
 			</div>
 				

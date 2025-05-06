@@ -12,7 +12,7 @@ function Mission(){
 useEffect(() => {
       AOS.init({
         duration: 1000, // animation duration
-        once: true,     // animate only once
+         
       });
     }, []);
 
@@ -33,7 +33,7 @@ useEffect(() => {
   <div className="flex-[2] bg-black py-12   flex flex-col items-center justify-center">
     <h2 className="font-Space text-white  float-left sm:text-[42px] text-[28px]" data-aos="fade-left">OUR Mission</h2>
     <div className="font-poppins flex items-center flex-col text-white text-[12px]">
-      <p className="px-4 md:px-12 mt-4 text-[14px] leading-7 text-center md:leading-9 font-poppins max-w-[500px]  md:max-w-[700px]" data-aos="fade-left">
+      <p className="px-4 md:px-12 mt-4 text-[14px] leading-7 text-center md:leading-9 font-poppins max-w-[500px]  md:max-w-[500px]" data-aos="fade-left">
         We have invested 6 year of our lifes to invent a new technology of
         production a 3D dials with quality of wristwatch industry.
         All what we need to turn on our imagination on maximum.

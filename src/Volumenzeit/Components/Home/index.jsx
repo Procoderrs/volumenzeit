@@ -15,7 +15,7 @@ function Home() {
   }, []);
 
   return (
-    <div id="home" className=" w-full max-w-[1440px] mx-auto bg-[#fafbff] flex flex-col md:flex-row items-center justify-between px-4 md:px-8 lg:px-16 font-poppins relative overflow-hidden">
+    <div id="home" className=" w-full max-w-[1440px] mx-auto bg-[#fafbff] flex flex-col md:flex-row items-center justify-between px-4 md:px-8  font-poppins relative overflow-hidden">
       {/* Text Content */}
       <div className="flex-1 z-10  mt-4 md:mt-0  sm:py-12  text-center md:text-left">
         <h1    className="text-[40px] md:text-6xl font-Space leading-[50px]    md:leading-[50px] max-w-[600px]  mb-4">
@@ -53,7 +53,7 @@ function Home() {
         <img
           src={watch}
           alt="Watch"
-          className="absolute right-0 top-[80px] w-auto h-[100%] object-contain origin-top-right"
+          className="absolute right-0 top-[80px] md:top-[10px] w-auto h-[100%] object-contain origin-top-right"
           data-aos="zoom-in-up"
           style={{
             transform: 'translateX(25%) '

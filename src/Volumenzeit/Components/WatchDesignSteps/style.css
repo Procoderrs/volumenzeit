@@ -58,8 +58,8 @@
   z-index: 20;
 }
 
-.step-container > .step:last-of-type::after{
-  display: none;
+.step:last-child::after{
+  display: none !important;
 }
 
 .step p {
@@ -80,6 +80,7 @@
     justify-content: center;
     gap: 150px;
     align-items: flex-start;
+
   }
 
   .step {
@@ -89,17 +90,16 @@
   /* Horizontal line between steps */
   .step::after {
     top: 40px;
-    left: 110%;
+    left: calc(50% + 50px);
     transform: none;
-    width: 320px;
+    width: calc(100% + 100px);
     height: 1px;
     background: white;
   }
 
-  .step-container > .step:last-of-type::after{
-    display: none;
+  .step:last-child::after {
+    display: none !important;
   }
-
   
 
   .step::before {

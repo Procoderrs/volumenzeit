@@ -31,10 +31,10 @@ function Navbar() {
 	}
 
 	return (
-		<div className=" bg-[#fafbff] sticky z-[20000] shadow-lg   top-0">
+		<div className=" bg-[#fafbff] max-w-[1440px] sticky z-[20000] mx-auto shadow-lg  w-full  top-0">
 
 		
-		<div className="  w-full max-w-[1440px]  mx-auto  bg-[#fafbff]  overflow-hidden z-[1000]     py-4 ">
+		<div className="  w-full   mx-auto   bg-[#fafbff]  overflow-hidden z-[1000]   md:px-3  py-4 ">
 			{/* Top part */}
 			<div className="flex justify-between px-4     items-center  w-full">
 				<Link to="/">
@@ -77,11 +77,11 @@ function Navbar() {
 
 			{/* Side Menu (Drawer) for Mobile */}
 			<div
-				className={`fixed top-10 left-0 h-full w-full bg-white shadow-md transform ${
+				className={`fixed top-14 left-0 h-full w-full bg-white shadow-md transform ${
 					isMenuOpen ? "translate-x-0" : "-translate-x-full"
 				} transition-transform duration-500 ease-in-out z-50`}
 			>
-				<ul className="flex flex-col items-center text-center px-6  w-full space-y-6 text-[#745cff] text-[24px] font-semibold">
+				<ul className="flex flex-col items-center text-center px-6 py-4  w-full space-y-6 text-[#745cff] text-[24px] font-semibold">
 					{navLinks.map((item) => (
 						<li key={item.id}>
 							<button
