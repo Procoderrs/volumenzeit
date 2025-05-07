@@ -65,7 +65,7 @@ function Chance() {
                 <input 
                   type="text" 
                   placeholder='Name' 
-                  className={`bg-white px-6 py-5 rounded-md w-full ${
+                  className={`bg-white text-black px-6 py-5 rounded-md w-full ${
                     errors.name ? 'border-2 border-red-500' : ''
                   }`}
                   value={name}
@@ -81,7 +81,7 @@ function Chance() {
                 <input 
                   type="email" 
                   placeholder='Email' 
-                  className={`bg-white px-6 py-5 rounded-md w-full ${
+                  className={`bg-white px-6 py-5 text-black rounded-md w-full ${
                     errors.email ? 'border-2 border-red-500' : ''
                   }`}
                   value={email}
