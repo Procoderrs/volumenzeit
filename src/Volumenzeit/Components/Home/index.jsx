@@ -26,7 +26,7 @@ function Home() {
           elementum commodo ipsum. Aenean aenean adipiscing lect.
         </p>
 
-        <button className="bg-[#745cff] hover:bg-white hover:text-[#745cff] border-2   mt-6 sm:mt-12 border-transparent hover:border-[#745cff] transition-all duration-300 text-sm  px-8 py-4 md:px-9 md:py-6 rounded-md text-white font-poppins mb-8">
+        <button className="bg-[#745cff] hover:bg-white hover:text-[#745cff] border-b-2   mt-6 sm:mt-12 border-transparent hover:border-[#745cff] transition-all duration-300 text-sm  px-8 py-4 md:px-9 md:py-6 rounded-md text-white font-poppins mb-8">
           <Link to=''>Design Your Watch</Link>
         </button>
 

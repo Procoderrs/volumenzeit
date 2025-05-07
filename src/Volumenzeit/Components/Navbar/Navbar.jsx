@@ -43,7 +43,7 @@ function Navbar() {
 
 				{/* Desktop menu */}
 				<div className="hidden lg:flex items-center gap-10  font-poppins">
-					<ul className="flex items-center    gap-8 text-[#745cff] text-[14px]">
+					<ul className="flex items-center    gap-10 text-[#745cff] text-[14px]">
 						{navLinks.map((item) => (
 							<li key={item.id}>
 								<button
@@ -65,7 +65,7 @@ function Navbar() {
 						<Button text='Sign up' />
 					</div>
 				{/* Mobile menu (Hamburger and Button) */}
-				<div className="lg:hidden flex gap-5 items-center ">
+				<div className="lg:hidden flex gap-5 items-center  ">
 					<div className="hidden sm:block">
 						<Button text='Sign up' />
 					</div>
@@ -77,7 +77,7 @@ function Navbar() {
 
 			{/* Side Menu (Drawer) for Mobile */}
 			<div
-				className={`fixed top-14 left-0 h-full w-full bg-white shadow-md transform ${
+				className={`fixed top-20 left-0 h-full w-full bg-white  shadow-md transform ${
 					isMenuOpen ? "translate-x-0" : "-translate-x-full"
 				} transition-transform duration-500 ease-in-out z-50`}
 			>

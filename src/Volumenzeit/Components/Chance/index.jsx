@@ -59,9 +59,9 @@ function Chance() {
         </div>
 
         <div className='mt-8 flex items-center gap-6 font-poppins justify-center flex-col'>
-          <form onSubmit={handleSubmit} className='w-full max-w-md'>
+          <form onSubmit={handleSubmit} className=''>
             <div className='flex flex-col md:flex-row gap-6'>
-              <div className='w-full'>
+              <div className=''>
                 <input 
                   type="text" 
                   placeholder='Name' 
@@ -77,7 +77,7 @@ function Chance() {
                 )}
               </div>
 
-              <div className='w-full'>
+              <div className=''>
                 <input 
                   type="email" 
                   placeholder='Email' 
@@ -96,15 +96,15 @@ function Chance() {
 
             <div className='flex items-center justify-center'>
             <button 
-              type="submit" 
-              className={`bg-black text-white px-12    text-[12px] py-5 rounded-md text-center mt-6 ${
-                isSubmitting ? 'opacity-50 cursor-not-allowed' : ''
-              }`}
-              disabled={isSubmitting}
-              data-aos="fade-up"
-            >
-              {isSubmitting ? 'Submitting...' : 'Sign Up'}
-            </button>
+  type="submit" 
+  className={`bg-black text-white px-16 transition-all duration-300 ease-in-out hover:bg-[#735cff] hover:border-b-2 border-b-2 border-transparent hover:border-black text-[12px] py-5 rounded-md text-center mt-6 ${
+    isSubmitting ? 'opacity-50 cursor-not-allowed' : ''
+  }`}
+  disabled={isSubmitting}
+  data-aos="fade-up"
+>
+  {isSubmitting ? 'Submitting...' : 'Sign Up'}
+</button>
             </div>
           </form>
 

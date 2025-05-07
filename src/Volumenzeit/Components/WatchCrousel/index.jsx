@@ -41,6 +41,7 @@ const	settings = {
       {
         breakpoint: 1440,
         settings: {
+					dots: false,
           slidesToShow: 3,
           slidesToScroll: 1,
           infinite: true,
@@ -50,6 +51,7 @@ const	settings = {
       {
         breakpoint: 768,
         settings: {
+					dots: false,
           slidesToShow: 2,
           slidesToScroll: 1,
           initialSlide: 0,
@@ -59,6 +61,7 @@ const	settings = {
 			{
         breakpoint: 1024,
         settings: {
+					dots: false,
           slidesToShow: 3,
           slidesToScroll: 1,
           initialSlide: 0,
@@ -69,6 +72,7 @@ const	settings = {
        {
         breakpoint: 640,
         settings: {
+					dots: false,
           slidesToShow: 1,
           slidesToScroll: 1
         }
@@ -76,6 +80,7 @@ const	settings = {
 			{
 				breakpoints:320,
 				settings:{
+					dots: false,
 					slidesToShow:1,
 					slidesToScroll:1,
 				}
@@ -85,8 +90,8 @@ const	settings = {
 
 	const WatchCard = ({ img, price, volumenzeit }) => (
 		
-		<div className="  "  data-aos="fade-up"     data-aos-once="false">
-			<div className="bg-[#f0f3fa]   mx-auto max-w-[350px]   text-center py-4    flex flex-col gap-3 rounded-md">
+		<div className=" mt-10  "  data-aos="fade-up"     data-aos-once="false">
+			<div className="bg-[#f0f3fa]   mx-auto max-w-[350px] md:max-w-[300px]   text-center py-4    flex flex-col gap-3 rounded-md">
 			<img
 				src={img}
 				alt={volumenzeit}
