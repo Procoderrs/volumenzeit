@@ -49,7 +49,7 @@ const FeatureBlock = ({ title, content, position, side }) => (
         <div className="inner-dot" />
       </div>
     </div>
-    <div className="px-28 font-poppins text-center flex flex-col items-center justify-center">
+    <div className="px-24 font-poppins  flex flex-col items-center justify-center">
       <h2 className="feature-title text-lg mb-4 relative">
         {title}
       </h2>
@@ -107,32 +107,36 @@ function Features() {
         </div>
 
         {/* Desktop View */}
-        <div className="hidden xl:block :flex w-full justify-center relative py-12 min-h-[600px] items-center">
+        <div className="hidden xl:block :flex w-full justify-center relative py-20 min-h-[600px] items-center">
           <div className="relative w-full gap-16  flex items-center justify-between">
             {/* Background Elements */}
-            <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px]">
+            <div className="absolute left-1/2 top-[70%] -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px]">
               <img src={circle} alt="circle" className="w-full h-full object-contain animate-spin-slow opacity-70" />
               <img src={watchFeatures} alt="watch" className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[340px] z-10" />
             </div>
 
             {/* Left Features */}
-            <div className="flex flex-col gap-16 z-20 mr-auto">
+            <div className="flex flex-col mt-[80px] gap-28 z-20 ml-[-50px]">
+              <div className="ml-[100px]">
               <FeatureBlock 
                 title="Individual Style" 
                 content={individualStyleContent}
-                position="right-[130px]  top-[2px]"
+                position="right-[60px]  top-[2px]"
                 side="left-1"
               />
+              </div>
+              <div className="ml-[20px] text-right">
               <FeatureBlock
                 title="High Quality Components"
                 content={qualityContent}
-                position="right-[130px] top-1/2 "
+                position="right-[95px]  top-1/2 "
                 side="left-2"
               />
+              </div>
             </div>
 
             {/* Right Features */}
-            <div className="flex flex-col gap-16 z-20 ml-auto">
+            <div className="flex flex-col gap-16   mt-[100px] z-20 ml-auto">
               <FeatureBlock
                 title="Features"
                 content={featuresContent}

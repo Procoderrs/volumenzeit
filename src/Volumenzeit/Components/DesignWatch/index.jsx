@@ -20,7 +20,7 @@ function DesignWatch() {
 		
 	return (
 		<div className="design  bg-[#745cff]  w-full max-w-[1440px] mx-auto overflow-hidden  flex flex-col items-center text-5xl  tracking-wide   text-center  px-6   font-Space ">
-			<div className="py-12 font-Space w-full ">
+			<div className="py-12 font-Space  w-full ">
 			<h2 data-aos="fade-up" data-aos-once="false" data-aos-duration="1000" className="text-[28px]">Design Your Watch</h2>
 			<WatchDesignSteps/>
 			</div>

@@ -11,7 +11,7 @@ function Watches() {
 	
 
 	return (
-		<div id="watches"  className="  overflow-hidden  w-full max-w-[1440px] mx-auto py-16 px-4 ">
+		<div id="watches"  className="  overflow-hidden  w-full max-w-[1440px] mx-auto py-16 px-8 ">
 			<div className=" ">
       <div className="flex items-center flex-col sm:items-start md:items-center">
 

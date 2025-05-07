@@ -30,15 +30,15 @@ useEffect(() => {
   </div>
 
   {/* Text div - larger */}
-  <div className="flex-[2] bg-black py-12   flex flex-col items-center justify-center">
-    <h2 className="font-Space text-white  float-left sm:text-[42px] text-[28px]" data-aos="fade-left">OUR Mission</h2>
-    <div className="font-poppins flex items-center flex-col text-white text-[12px]">
-      <p className="px-4 md:px-12 mt-4 text-[14px] leading-7 text-center md:leading-9 font-poppins max-w-[500px]  md:max-w-[500px]" data-aos="fade-left">
+  <div className="flex-[2]  py-28 bg-black     flex flex-col  items-end  justify-center">
+    <h2 className="font-Space text-white float-right px-36  sm:text-[42px] text-[28px]" data-aos="fade-left">OUR Mission</h2>
+    <div className="font-poppins flex    items-center flex-col text-white text-[12px]">
+      <p className="px-4 md:px-24 mt-4 text-[14px] leading-7 md:leading-8 md:text-start text-center  font-poppins max-w-[500px]  md:max-w-[600px]" data-aos="fade-left">
         We have invested 6 year of our lifes to invent a new technology of
         production a 3D dials with quality of wristwatch industry.
         All what we need to turn on our imagination on maximum.
       </p>
-      <p className="mt-12 px-4 md:px-12 max-w-[500px] leading-7  text-center md:leading-9 text-[14px]" data-aos="fade-left">
+      <p className="mt-8 px-4 md:px-12 max-w-[500px] leading-7  md:text-start text-center md:leading-8 text-[14px]" data-aos="fade-left">
         We love Out-of-the-box designs and believe there are many people who think the same.
       </p>
 

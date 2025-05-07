@@ -5,8 +5,8 @@ function WatchDesignSteps() {
     <div className='flex flex-col   max-w-[1440px]  py-6 md:py-12  '>
 
     
-    <div className="step-container  ">
-      <div className="step w-full"  data-step="1" data-aos="fade-right">
+    <div className="step-container    ">
+      <div className="step w-full font-Space text-[32px]"  data-step="1" data-aos="fade-right">
       <p className=' ' >Case Color</p>
 
         <div className="circle-inner ">1</div>

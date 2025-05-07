@@ -5,13 +5,26 @@
   color: white;
 }
 
+/* Left side of V */
 .design::before {
   content: "";
   position: absolute;
-  top: -12px;
-  left: calc(50% - 12px); /* Center it */
-  width: 24px;
-  height: 24px;
+  top: -30px;
+  left: 50%;
+  transform: translateX(10%) rotate(45deg);
+  width: 40px;
+  height: 40px;
   background: #ffffff;
-  transform: rotate(50deg); /* Rotate square to make it look like a diamond */
+}
+
+/* Right side of V */
+.design::after {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(0%) rotate(-45deg);
+  width: 40px;
+  height: 40px;
+  background: #ffffff;
 }
