@@ -140,7 +140,7 @@ function Features() {
               <FeatureBlock
                 title="Features"
                 content={featuresContent}
-                position="left-[150px] "
+                position="left-[130px] "
                 side="right"
               />
             </div>
