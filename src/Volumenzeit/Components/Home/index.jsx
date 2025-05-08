@@ -15,9 +15,12 @@ function Home() {
   }, []);
 
   return (
-    <div id="home" className=" w-full max-w-[1440px] mx-auto bg-[#fafbff] flex flex-col md:flex-row items-center justify-between px-4 md:px-8  font-poppins relative overflow-hidden">
+    <div className="bg-[#fafbff] w-full h-full ">
+
+    
+    <div id="home" className=" w-full h-full    flex flex-col md:flex-row items-center justify-between px-4 md:px-8  font-poppins relative ">
       {/* Text Content */}
-      <div className="flex-1 z-10  mt-4 md:mt-0  sm:py-12  text-center md:text-left">
+      <div className="flex-1 z-10  mt-4 md:mt-0   sm:py-12  text-center md:text-left">
         <h1    className="text-[40px] md:text-6xl font-Space leading-[50px]    md:leading-[50px] max-w-[600px]  mb-4">
           Find Your DREAM Watch
         </h1>
@@ -26,7 +29,7 @@ function Home() {
           elementum commodo ipsum. Aenean aenean adipiscing lect.
         </p>
 
-        <button className="bg-[#745cff] hover:bg-white hover:text-[#745cff] border-b-2   mt-6 sm:mt-12 border-transparent hover:border-[#745cff] transition-all duration-300 text-sm  px-8 py-4 md:px-9 md:py-6 rounded-md text-white font-poppins mb-8">
+        <button className="bg-[#745cff] hover:bg-white hover:text-[#745cff] border-transparent hover:border-b-2   mt-6 sm:mt-12  hover:border-[#745cff] transition-all duration-300 text-sm  px-8 py-4 md:px-9 md:py-6 rounded-md text-white font-poppins mb-8">
           <Link to=''>Design Your Watch</Link>
         </button>
 
@@ -49,7 +52,7 @@ function Home() {
       </div>
 
       {/* Desktop Background Image */}
-      <div className="hidden md:block absolute inset-0 overflow-hidden z-0">
+      <div className="hidden md:block absolute  inset-0 overflow-hidden z-0">
         <img
           src={watch}
           alt="Watch"
@@ -61,6 +64,7 @@ function Home() {
           }}
         />
       </div>
+    </div>
     </div>
   );
 }

@@ -31,10 +31,11 @@ function Navbar() {
 	}
 
 	return (
-		<div className=" bg-[#fafbff] max-w-[1440px] sticky z-[20000] mx-auto shadow-lg  w-full  top-0">
+		<div className="">
+		<div className=" bg-[#fafbff]  sticky z-[20000]   w-full  top-0">
 
 		
-		<div className="  w-full   mx-auto   bg-[#fafbff]  overflow-hidden z-[1000]   md:px-3  py-4 ">
+		<div className="  w-full   mx-auto max-w-[1440px]   bg-[#fafbff]  overflow-hidden z-[1000]   md:px-3  py-4 ">
 			{/* Top part */}
 			<div className="flex justify-between px-4     items-center  w-full">
 				<Link to="/">
@@ -106,6 +107,7 @@ function Navbar() {
 			{isMenuOpen && (
 				<div className="fixed inset-0 z-40" onClick={handleMenuToggle}></div>
 			)}
+		</div>
 		</div>
 		</div>
 	);

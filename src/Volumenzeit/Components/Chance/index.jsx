@@ -44,7 +44,7 @@ function Chance() {
   };
 
   return (
-    <div className="bg-cover bg-center py-12 bg-pink-400 w-full max-w-[1440px] overflow-hidden mx-auto px-4 relative text-white"
+    <div className="bg-cover bg-center py-12 bg-pink-400 w-full   h-full overflow-hidden mx-auto px-4 relative text-white"
       style={{ backgroundImage: `url(${bg})` }}>
       
       <div className='flex flex-col'>

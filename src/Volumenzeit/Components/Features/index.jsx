@@ -33,7 +33,7 @@ const featuresContent = (
 const qualityContent = (
   <>
     <p>Case size: 316L Stainless-Steel</p>
-    <p>Coating: Color anodized anti-scratch</p>
+    <p>Coating: Color anodized anti-scratch </p>
     <p>Glass: Sapphire Crystal</p>
     <p>Straps: 22mm Stainless-steel bracelet</p>
     <p>Straps: Quick release</p>
@@ -49,8 +49,8 @@ const FeatureBlock = ({ title, content, position, side }) => (
         <div className="inner-dot" />
       </div>
     </div>
-    <div className="px-24 font-poppins  flex flex-col items-center justify-center">
-      <h2 className="feature-title text-lg mb-4 relative">
+    <div className="px-16 font-poppins  flex flex-col items-center justify-center">
+      <h2 className="feature-title text-lg mb-4  relative">
         {title}
       </h2>
       <div className="text-[10px] font-poppins max-w-[300px] leading-5 text-[#939393]">
@@ -63,7 +63,7 @@ const FeatureBlock = ({ title, content, position, side }) => (
 // Main Component
 function Features() {
   useEffect(() => {
-    AOS.init({ duration: 500, once: true });
+    AOS.init({ duration: 500,  });
   }, []);
 
   const getFeatureContent = (title) => {
@@ -77,7 +77,7 @@ function Features() {
 
   return (
     <div className="py-12">
-      <div id="features" className="font-poppins w-full max-w-[1440px] mx-auto flex flex-col px-4 items-center">
+      <div id="features" className="font-poppins w-full  mx-auto flex flex-col px-4 items-center">
         <h2 className="md:text-[40px] text-[28px]  font-Space" data-aos="fade-up">Features</h2>
 
         {/* Mobile View */}
@@ -107,41 +107,54 @@ function Features() {
         </div>
 
         {/* Desktop View */}
-        <div className="hidden xl:block :flex w-full justify-center relative py-20 min-h-[600px] items-center">
-          <div className="relative w-full gap-16  flex items-center justify-between">
-            {/* Background Elements */}
-            <div className="absolute left-1/2 top-[70%] -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px]">
-              <img src={circle} alt="circle" className="w-full h-full object-contain animate-spin-slow opacity-70" />
-              <img src={watchFeatures} alt="watch" className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[340px] z-10" />
-            </div>
-
-            {/* Left Features */}
-            <div className="flex flex-col mt-[80px] gap-28 z-20 ml-[-50px]">
-              <div className="ml-[100px]">
+        {/* Desktop View */}
+        <div className="hidden xl:block w-full py-12 min-h-[600px]  relative">
+          <div className="relative z-20   w-full h-full  max-w-[1160px] flex items-center  mx-auto">
+            {/* Left Features Column */}
+            <div className="flex flex-col gap-28 z-20 mr-[150px] py-4  ">
+              <div className="">
               <FeatureBlock 
                 title="Individual Style" 
                 content={individualStyleContent}
-                position="right-[60px]  top-[2px]"
+                position="right-4 top-2 -translate-y-1/4"
                 side="left-1"
               />
               </div>
-              <div className="ml-[20px] text-right">
+              <div className=" ">
               <FeatureBlock
                 title="High Quality Components"
                 content={qualityContent}
-                position="right-[95px]  top-1/2 "
+                position="right-10 top-28"
                 side="left-2"
+                className="no-wrap-title"
               />
               </div>
             </div>
 
-            {/* Right Features */}
-            <div className="flex flex-col gap-16   mt-[100px] z-20 ml-auto">
+            {/* Center Watch Image */}
+            <div className="flex items-center justify-center w-full absolute  ">
+              <div className="relative h-full w-full flex items-center justify-center  mt-[30px] pointer-events-none">
+                <img 
+                  src={circle} 
+                  alt="circle" 
+                  className=" absolute w-[700px] h-[700px] lg:w-[700px] lg:h-auto   opacity-70 animate-spin-slow mx-auto object-contain" 
+                />
+                <img 
+                  src={watchFeatures} 
+                  alt="watch" 
+                  className="relative z-10 w-[300px] lg:w-[350px] lg:h-[500px] transform mx-auto transition-all duration-300"
+                />
+              </div>
+            </div>
+
+            {/* Right Features Column */}
+            <div className="flex flex-col items-center justify-center z-20 h-full ml-[350px] ">
               <FeatureBlock
                 title="Features"
                 content={featuresContent}
-                position="left-[130px] "
+                position="left-[70px]"
                 side="right"
+                className=""
               />
             </div>
           </div>

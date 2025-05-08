@@ -27,15 +27,15 @@ const	settings = {
     slidesToScroll: 1,
     initialSlide: 0,
     responsive: [
-			/* {
-        breakpoint: 1440,
+			{
+        breakpoint: 2560,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 3,
           infinite: true,
           dots: true
         }
-      }, */
+      }, 
 
 
       {

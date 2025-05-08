@@ -2,7 +2,7 @@ import './style.css';
 function WatchDesignSteps() {
   return (
 
-    <div className='flex flex-col   max-w-[1440px]  py-6 md:py-12  '>
+    <div className='flex flex-col  max-w-[1440px]     py-6 md:py-12  '>
 
     
     <div className="step-container    ">

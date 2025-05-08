@@ -19,7 +19,9 @@ useEffect(() => {
 
   const MARKETING=marketing
   return(
-    <div  id='mission' className="flex   max-w-[1440px] mx-auto  flex-col lg:flex-row  w-full overflow-hidden">
+    
+    <div className='w-full bg-black'>
+      <div  id='mission' className="flex   flex-col lg:flex-row  w-full overflow-hidden">
   {/* Image div - smaller */}
   <div className='px-36 bg-black lg:px-0'>
   <div className="flex-[1] image-fade-right"> 
@@ -32,9 +34,10 @@ useEffect(() => {
   </div>
 
   {/* Text div - larger */}
-  <div className="flex-[2]  py-28 bg-black     flex flex-col  lg:items-end  items-center justify-center">
+  <div className="flex-[2]  py-28 bg-black     flex flex-col  lg:items-center  items-center justify-center">
+    <div className="font-poppins flex    items-center flex-col text-white ">
     <h2 className="font-Space text-white float-right lg:px-36 text-center  sm:text-[42px] text-[28px]" data-aos="fade-left">OUR Mission</h2>
-    <div className="font-poppins flex    items-center flex-col text-white text-[12px]">
+
       <p className="px-4 md:px-24 mt-4 text-[14px] leading-7 md:leading-8 lg:text-start text-center  font-poppins max-w-[500px] md:max-w-[800px]  lg:max-w-[600px]" data-aos="fade-left">
         We have invested 6 year of our lifes to invent a new technology of
         production a 3D dials with quality of wristwatch industry.
@@ -50,6 +53,7 @@ useEffect(() => {
     </div>
   </div>
 </div>
+    </div>
 
 
   )
