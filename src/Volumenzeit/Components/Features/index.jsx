@@ -108,7 +108,7 @@ function Features() {
           </div>
         </div>
 
-        {/* Desktop View */}
+       
         {/* Desktop View */}
         <div className="hidden xl:block w-full py-12 min-h-[600px]  relative">
           <div className="relative z-20   w-full h-full  max-w-[1160px] flex items-center  mx-auto">
@@ -154,7 +154,7 @@ function Features() {
               <FeatureBlock
                 title="Features"
                 content={featuresContent}
-                position="left-[-20px] top-[-5px]"
+                position="left-[-20px] top-[2px]"
                 side="right"
                 className=""
               />
