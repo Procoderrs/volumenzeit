@@ -31,7 +31,7 @@ function Navbar() {
 	}
 
 	return (
-		<div className=" md:sticky top-0 z-[20000]">
+		<div className=" sticky top-0 z-[20000]">
 		<div className=" bg-[#fafbff]      w-full  ">
 
 		

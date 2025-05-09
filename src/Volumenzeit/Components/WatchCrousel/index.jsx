@@ -91,7 +91,7 @@ const	settings = {
 	const WatchCard = ({ img, price, volumenzeit }) => (
 		
 		<div className=" mt-10  "  data-aos="fade-up"      data-aos-once="false">
-			<div className="bg-[#f0f3fa]    max-w-[350px] md:max-w-[300px]   text-center py-4    flex flex-col gap-3 rounded-md">
+			<div className="bg-[#f0f3fa]    max-w-[350px] md:max-w-[300px]   text-center py-4  mx-auto    flex flex-col gap-3 rounded-md">
 			<img
 				src={img}
 				alt={volumenzeit}

@@ -23,7 +23,7 @@ useEffect(() => {
     <div className='w-full bg-black'>
       <div  id='mission' className="flex   flex-col lg:flex-row  w-full overflow-hidden">
   {/* Image div - smaller */}
-  <div className='px-36 bg-black lg:px-0'>
+  <div className='md:px-36 bg-black lg:px-0'>
   <div className="flex-[1] image-fade-right"> 
     <img
       src={MARKETING}
@@ -34,7 +34,7 @@ useEffect(() => {
   </div>
 
   {/* Text div - larger */}
-  <div className="flex-[2]  py-28 bg-black  px-16    flex flex-col  items-center lg:items-end justify-center">
+  <div className="flex-[2]  py-28 bg-black px-4  md:px-16 lg:px-[220px]    flex flex-col  items-center lg:items-center justify-center">
     <div className="font-poppins flex      md:items-start items-center flex-col text-white ">
     <h2 className="font-Space text-white      text-center  sm:text-[42px] text-[28px]" data-aos="fade-left">OUR Mission</h2>
 
