@@ -19,10 +19,9 @@ const individualStyleContent = (
 const featuresContent = (
   <>
     <p>Case size: 42mm</p>
-    <p>Case Color: Silver, Black, Blue, chamfered</p>
-    <p>brush with mirror polish</p>
-    <p>Dial Color: Black Metallic</p>
-    <p>Blue-Purple Water Resistance: 5 ATM/50 meters</p>
+    <p>Case Color: Silver, Black, Blue, chamfered brush with mirror polish</p>
+    <p>Dial Color: Black Metallic Color shiftingBlue-purple, Green-Purple,Pink-Gold</p>
+    <p>Water Resistance: 5 ATM/50 meters</p>
     <p>Straps: Quick release</p>
     <p>Movement: Swiss Parts RONDA 762E</p>
     <p>Instantaneous rate -10/ +20 sec/month</p>
@@ -35,12 +34,13 @@ const qualityContent = (
     <p>Case size: 316L Stainless-Steel</p>
     <p>Coating: Color anodized anti-scratch </p>
     <p>Glass: Sapphire Crystal</p>
-    <p>Straps: 22mm Stainless-steel bracelet</p>
+    <p>Straps: 22mm Stainless-steel bracelet,Milanese</p>
     <p>Straps: Quick release</p>
     <p>Bracelet, Leather</p>
   </>
 );
 
+// FeatureBlock Component
 // FeatureBlock Component
 const FeatureBlock = ({ title, content, position, side }) => (
   <div className={`feature-block ${side} relative`} data-aos="fade-left">
@@ -49,11 +49,13 @@ const FeatureBlock = ({ title, content, position, side }) => (
         <div className="inner-dot" />
       </div>
     </div>
-    <div className="px-16 font-poppins  flex flex-col items-center justify-center">
-      <h2 className="feature-title text-lg mb-4  relative">
+    <div className={`font-poppins flex flex-col justify-center`}>
+      <h2 className="feature-title text-lg mb-4 relative">
         {title}
       </h2>
-      <div className="text-[10px] font-poppins max-w-[300px] leading-5 text-[#939393]">
+      <div className={`text-[10px] ${
+        side === 'right' ? 'text-left'  : 'text-right'
+      } font-poppins max-w-[300px] leading-7 font-extralight text-[#939393]`}>
         {content}
       </div>
     </div>
@@ -111,21 +113,21 @@ function Features() {
         <div className="hidden xl:block w-full py-12 min-h-[600px]  relative">
           <div className="relative z-20   w-full h-full  max-w-[1160px] flex items-center  mx-auto">
             {/* Left Features Column */}
-            <div className="flex flex-col gap-28 z-20 mr-[150px] py-4  ">
-              <div className="">
+            <div className="flex flex-col gap-28 z-20 mr-[50px] py-4  ">
+              <div className=" ml-[120px] ">
               <FeatureBlock 
                 title="Individual Style" 
                 content={individualStyleContent}
-                position="right-4 top-2 -translate-y-1/4"
-                side="left-1"
+                position="right-[-80px] top-2 -translate-y-1/4"
+                side="left-1 left"
               />
               </div>
-              <div className=" ">
+              <div className=" ml-[20px]    ">
               <FeatureBlock
                 title="High Quality Components"
                 content={qualityContent}
-                position="right-10 top-28"
-                side="left-2"
+                position="right-[-35px] top-[115px]"
+                side="left-2 left"
                 className="no-wrap-title"
               />
               </div>
@@ -148,11 +150,11 @@ function Features() {
             </div>
 
             {/* Right Features Column */}
-            <div className="flex flex-col items-center justify-center z-20 h-full ml-[350px] ">
+            <div className="  z-20 h-full ml-[550px]  ">
               <FeatureBlock
                 title="Features"
                 content={featuresContent}
-                position="left-[70px]"
+                position="left-[-20px] top-[-5px]"
                 side="right"
                 className=""
               />

@@ -6,8 +6,8 @@
 .feature-block.left-1::before {
   content: "";
   position: absolute;
-  top: 10px; /* near the dot */
-  left: 306px; /* adjust spacing */
+  top: 9px; /* near the dot */
+  left: 200px; /* adjust spacing */
   width: 65px;
   height: 1px;
   background-color: black; /* light purple line */
@@ -16,10 +16,10 @@
 .feature-block.left-1::after {
   content: "";
   position: absolute;
-  top:-2px;
-  left:406px; /* aligns with the start of ::before */
+  top:-5px;
+  left:305px; /* aligns with the start of ::before */
   width: 1px;
-  height: 110px; /* length going downward */
+  height: 123px; /* length going downward */
   background-color: black;
   transform: rotate(-40deg);
 }
@@ -28,23 +28,24 @@
 .feature-block.right::before {
   content: "";
   position: absolute;
-  top: 9.5px;
-  right: 260px;
+  top: 8px;
+  right: 320px;
   width: 55px;
   height: 1px;
   background-color: black;
+  transform: rotate(-6deg);
 }
 
 .feature-block.right::after {
   content: "";
   position: absolute;
-  top:0px;
-  right: 350px;
+  top:10px;
+  right: 390px;
   width: 1px;
-  height: 125px;
+  height: 85px;
   background-color: black;
 
-  transform:  rotate(35deg);
+  transform:  rotate(20deg);
 }
 
 
@@ -52,7 +53,7 @@
   content: "";
   position: absolute;
   top: 125px; /* near the dot */
-  left: 286px; /* adjust spacing */
+  left: 266px; /* adjust spacing */
   width: 35px;
   height: 1px;
   background-color: black; /* light purple line */
@@ -63,7 +64,7 @@
   content: "";
   position: absolute;
   top: 33px;
-  left: 355px; /* aligns with the start of ::before */
+  left: 335px; /* aligns with the start of ::before */
   width: 1px;
   height: 105px; /* length going downward */
   background-color: black;
