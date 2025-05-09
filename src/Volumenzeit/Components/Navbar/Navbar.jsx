@@ -31,15 +31,15 @@ function Navbar() {
 	}
 
 	return (
-		<div className="">
-		<div className=" bg-[#fafbff]  sticky z-[20000]   w-full  top-0">
+		<div className=" md:sticky top-0 z-[20000]">
+		<div className=" bg-[#fafbff]      w-full  ">
 
 		
-		<div className="  w-full   mx-auto max-w-[1440px]   bg-[#fafbff]  overflow-hidden z-[1000]   md:px-3  py-4 ">
+		<div className="  w-full   mx-auto max-w-[1440px]   bg-[#fafbff]  overflow-hidden z-[1000]   md:px-20  py-4 ">
 			{/* Top part */}
-			<div className="flex justify-between px-4     items-center  w-full">
+			<div className="flex justify-between px-4    items-center  w-full">
 				<Link to="/">
-					<img src={logo} alt="logo" className="md:h-[34px] h-6" />
+					<img src={logo} alt="logo" className="md:h-[35px] h-6" />
 				</Link>
 
 				{/* Desktop menu */}

@@ -18,9 +18,9 @@ function Home() {
     <div className="bg-[#fafbff] w-full h-full ">
 
     
-    <div id="home" className=" w-full h-full    flex flex-col md:flex-row items-center justify-between px-4 md:px-8  font-poppins relative ">
+    <div id="home" className=" w-full h-full    flex flex-col md:flex-row items-center justify-between px-4 md:px-20  font-poppins relative ">
       {/* Text Content */}
-      <div className="flex-1 z-10  mt-4 md:mt-0   sm:py-12  text-center md:text-left">
+      <div className="flex-1 z-10  mt-6 md:mt-0   sm:py-12  text-center md:text-left">
         <h1    className="text-[40px] md:text-6xl font-Space leading-[50px]    md:leading-[50px] max-w-[600px]  mb-4">
           Find Your DREAM Watch
         </h1>
@@ -29,11 +29,11 @@ function Home() {
           elementum commodo ipsum. Aenean aenean adipiscing lect.
         </p>
 
-        <button className="bg-[#745cff] hover:bg-white hover:text-[#745cff] border-transparent hover:border-b-2   mt-6 sm:mt-12  hover:border-[#745cff] transition-all duration-300 text-sm  px-8 py-4 md:px-9 md:py-6 rounded-md text-white font-poppins mb-8">
+        <button className="bg-[#745cff] hover:bg-white hover:text-[#745cff] border-transparent hover:border-b-2   mt-6 sm:mt-12  hover:border-[#745cff] transition-all duration-300 text-sm  px-8 py-4 md:px-9 md:py-6 rounded-md text-white font-poppins mb-2">
           <Link to=''>Design Your Watch</Link>
         </button>
 
-        <div className="hidden w-full md:block mt-8">
+        <div className="hidden w-full md:block ">
           <SocialMediaIcons />
         </div>
       </div>

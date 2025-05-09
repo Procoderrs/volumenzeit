@@ -67,9 +67,10 @@
 .step p {
   margin-top: -20px;
   font-size: 12px;
-  font-weight: 200;
+  font-weight: 300;
   z-index: 50;
   font-family: 'poppins';
+  color: white;
 }
 
 
