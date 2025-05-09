@@ -34,7 +34,7 @@ useEffect(() => {
   </div>
 
   {/* Text div - larger */}
-  <div className="flex-[2]  py-28 bg-black px-4  md:px-16 lg:px-[220px]    flex flex-col  items-center lg:items-center justify-center">
+  <div className="flex-[2]  py-28 bg-black px-4  lg:px-4   flex flex-col  items-center lg:items-center justify-center">
     <div className="font-poppins flex      md:items-start items-center flex-col text-white ">
     <h2 className="font-Space text-white      text-center  sm:text-[42px] text-[28px]" data-aos="fade-left">OUR Mission</h2>
 
@@ -43,7 +43,7 @@ useEffect(() => {
         production a 3D dials with quality of wristwatch industry.
         All what we need to turn on our imagination on maximum.
       </p>
-      <p className="mt-8 max-w-[700px] text-[#dedede] font-extralight font-poppins  lg:max-w-[360px] lg:text-start md:text-center text-center text-[14px]" data-aos="fade-left">
+      <p className="mt-8 max-w-[700px] text-[#dedede] font-extralight font-poppins  lg:max-w-[400px] lg:text-start md:text-center text-center text-[14px]" data-aos="fade-left">
         We love Out-of-the-box designs and believe there are many people who think the same.
       </p>
 
