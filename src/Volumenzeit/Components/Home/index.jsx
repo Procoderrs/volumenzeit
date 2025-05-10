@@ -20,7 +20,7 @@ function Home() {
     
     <div id="home" className=" w-full h-full    flex flex-col md:flex-row items-center justify-between px-4 md:px-20  font-poppins relative ">
       {/* Text Content */}
-      <div className="flex-1 z-10  mt-6 md:mt-0   sm:py-12  text-center md:text-left">
+      <div className="flex-1 z-10  mt-6 md:mt-0  max-w-[1440px] 2xl:px-20 mx-auto w-full h-full  sm:py-12  text-center md:text-left">
         <h1    className="text-[40px] md:text-6xl font-Space leading-[50px]    md:leading-[50px] max-w-[600px]  mb-4">
           Find Your DREAM Watch
         </h1>

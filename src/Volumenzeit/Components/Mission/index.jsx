@@ -34,8 +34,8 @@ useEffect(() => {
   </div>
 
   {/* Text div - larger */}
-  <div className="flex-[2]  py-28  px-4  lg:pl-36    flex flex-col  items-center lg:items-center justify-center">
-    <div className="font-poppins flex      md:item-end items-center flex-col text-white ">
+  <div className="flex-[2]  py-28 bg-black px-4  lg:px-4   flex flex-col  items-center lg:items-center justify-center">
+    <div className="font-poppins flex      md:items-start items-center flex-col text-white ">
     <h2 className="font-Space text-white      text-center  sm:text-[42px] text-[28px]" data-aos="fade-left">OUR Mission</h2>
 
       <p className="  mt-4 text-sm text-[#dedede]   font-extralight leading-7  lg:text-start text-center  font-poppins max-w-[500px] md:max-w-[800px]  lg:max-w-[400px]" data-aos="fade-left">
