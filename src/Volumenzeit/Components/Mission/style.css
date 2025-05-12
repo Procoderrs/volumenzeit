@@ -13,3 +13,39 @@
   background: linear-gradient(to left, black, rgba(255, 255, 255, 0));
   pointer-events: none;
 }
+
+.mission{
+  position: relative;
+
+}
+.mission::before {
+  content: "";
+  position: absolute;
+  top: -70px;
+  left: 97%; /* Changed from left: 95% */
+  transform: translateX(-20%) rotate(-50deg); /* Adjusted translate and rotation */
+  width: 120px;
+  height:120px;
+  background: #745cff;
+}
+
+
+.mission::after {
+  display: none; /* Hide by default for mobile */
+}
+
+/* Desktop styles (flex-row layout) */
+@media (min-width: 820px) { /* Match Tailwind's lg breakpoint */
+  .mission::after {
+    content: "";
+    position: absolute;
+    top: 90%;
+    left: 0;
+    width: 65%;
+    height: 50%;
+    background: white;
+    clip-path: polygon(0 0, 52% 0, 76% 36%, 0 34%);
+    z-index: 1;
+    display: block; /* Show only in desktop layout */
+  }
+}

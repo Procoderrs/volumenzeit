@@ -20,8 +20,8 @@ useEffect(() => {
   const MARKETING=marketing
   return(
     
-    <div className='w-full bg-black'>
-      <div  id='mission' className="flex   flex-col lg:flex-row  w-full overflow-hidden">
+    <div className='w-full bg-black mission bottom-style'>
+      <div  id='mission' className="flex    flex-col lg:flex-row  w-full overflow-hidden">
   {/* Image div - smaller */}
   <div className='md:px-36 bg-black lg:px-0'>
   <div className="flex-[1] image-fade-right"> 
@@ -35,7 +35,7 @@ useEffect(() => {
 
   {/* Text div - larger */}
   <div className="flex-[2]  py-28 bg-black px-4  lg:px-4   flex flex-col  items-center lg:items-center justify-center">
-    <div className="font-poppins flex      md:items-start items-center flex-col text-white ">
+    <div className="font-poppins flex      md:items-center  lg:items-start items-center flex-col text-white ">
     <h2 className="font-Space text-white      text-center  sm:text-[42px] text-[28px]" data-aos="fade-left">OUR Mission</h2>
 
       <p className="  mt-4 text-sm text-[#dedede]   font-extralight leading-7  lg:text-start text-center  font-poppins max-w-[500px] md:max-w-[800px]  lg:max-w-[400px]" data-aos="fade-left">

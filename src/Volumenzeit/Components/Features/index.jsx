@@ -40,7 +40,7 @@ const qualityContent = (
   </>
 );
 
-// FeatureBlock Component
+//  Component
 // FeatureBlock Component
 const FeatureBlock = ({ title, content, position, side }) => (
   <div className={`feature-block ${side} relative`} data-aos="fade-left">
@@ -96,10 +96,10 @@ function Features() {
                   <div className="feature-dot">
                     <div className="inner-dot" />
                   </div>
-                  <h2 className="feature-title-mobile text-[18px] mb-4 mt-4  relative">
+                  <h2 className="feature-title-mobile text-[18px] mb-4 mt-4  relative" data-aos="fade-left">
                     {title}
                   </h2>
-                  <div className="text-[10px] leading-5 text-[#939393] text-center">
+                  <div className="text-[10px] px-4 font-poppins  font-light leading-6 text-[#939393] text-center" data-aos="fade-left">
                     {getFeatureContent(title)}
                   </div>
                 </div>

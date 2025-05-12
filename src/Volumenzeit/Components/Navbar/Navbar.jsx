@@ -35,15 +35,15 @@ function Navbar() {
 		<div className=" bg-[#fafbff]      w-full  ">
 
 		
-		<div className="  w-full   mx-auto max-w-[1440px]   bg-[#fafbff]  overflow-hidden z-[1000]   md:px-20  py-4 ">
+		<div className="  w-full   mx-auto max-w-[1440px]   bg-[#fafbff]  overflow-hidden z-[1000]   lg:px-20  py-4 ">
 			{/* Top part */}
 			<div className="flex justify-between px-4    items-center  w-full">
 				<Link to="/">
-					<img src={logo} alt="logo" className="md:h-[35px] h-6" />
+					<img src={logo} alt="logo" className="md:h-[35px] h-6 "  data-aos="fade-right" />
 				</Link>
 
 				{/* Desktop menu */}
-				<div className="hidden lg:flex items-center gap-10  font-poppins">
+				<div className="hidden lg:flex items-center gap-10  font-poppins"  data-aos="fade-right" data-aos-delay="50">
 					<ul className="flex items-center    gap-10 text-[#745cff] text-[14px]">
 						{navLinks.map((item) => (
 							<li key={item.id}>
@@ -62,7 +62,7 @@ function Navbar() {
 					</ul>
 					
 				</div>
-				<div className="hidden lg:block">
+				<div className="hidden lg:block"  data-aos="fade-left">
 						<Button text='Sign up' />
 					</div>
 				{/* Mobile menu (Hamburger and Button) */}

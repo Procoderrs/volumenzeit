@@ -1,50 +1,98 @@
-import { useState } from 'react';
+import { useReducer } from 'react';
 import bg from '../Images/bg.jpg';
 
+// Reducer initial state
+const initialState = {
+  values: {
+    email: '',
+    name: '',
+  },
+  errors: {},
+  isSubmitting: false,
+  isSubmitted: false,
+};
+
+// Reducer function
+function formReducer(state, action) {
+  switch (action.type) {
+    case 'UPDATE_FIELD':
+      return {
+        ...state,
+        values: {
+          ...state.values,
+          [action.field]: action.value
+        },
+        errors: {
+          ...state.errors,
+          [action.field]: null
+        }
+      };
+
+    case 'SET_ERRORS':
+      return {
+        ...state,
+        errors: action.errors
+      };
+
+    case 'SUBMIT_START':
+      return {
+        ...state,
+        isSubmitting: true
+      };
+
+    case 'SUBMIT_SUCCESS':
+      return {
+        ...initialState,
+        isSubmitted: true
+      };
+
+    default:
+      return state;
+  }
+}
+
 function Chance() {
-  const [email, setEmail] = useState('');
-  const [name, setName] = useState('');
-  const [errors, setErrors] = useState({});
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [state, dispatch] = useReducer(formReducer, initialState);
+  const { values, errors, isSubmitting, isSubmitted } = state;
 
   // Validation rules
   const validateForm = () => {
     const newErrors = {};
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-    if (!name.trim()) {
+    if (!values.name.trim()) {
       newErrors.name = 'Name is required';
-    } else if (name.length < 2) {
+    } else if (values.name.length < 2) {
       newErrors.name = 'Name must be at least 2 characters';
     }
 
-    if (!email) {
+    if (!values.email) {
       newErrors.email = 'Email is required';
-    } else if (!emailRegex.test(email)) {
+    } else if (!emailRegex.test(values.email)) {
       newErrors.email = 'Invalid email address';
     }
 
-    setErrors(newErrors);
+    dispatch({ type: 'SET_ERRORS', errors: newErrors });
     return Object.keys(newErrors).length === 0;
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validateForm()) {
-      setIsSubmitting(true);
+      dispatch({ type: 'SUBMIT_START' });
       // Simulate API call
       setTimeout(() => {
-        setIsSubmitting(false);
-        setIsSubmitted(true);
-        setName('');
-        setEmail('');
+        dispatch({ type: 'SUBMIT_SUCCESS' });
       }, 1500);
     }
   };
 
+  const handleInputChange = (field, value) => {
+    dispatch({ type: 'UPDATE_FIELD', field, value });
+  };
+
   return (
-    <div className="bg-cover bg-center py-12 bg-pink-400 w-full   h-full overflow-hidden mx-auto px-4 relative text-white"
+    <div className="bg-cover bg-center py-12 bg-pink-400 w-full h-full overflow-hidden mx-auto px-4 relative text-white"
       style={{ backgroundImage: `url(${bg})` }}>
       
       <div className='flex flex-col'>
@@ -68,8 +116,8 @@ function Chance() {
                   className={`bg-white text-black px-6 py-5 rounded-md w-full ${
                     errors.name ? 'border-2 border-red-500' : ''
                   }`}
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
+                  value={values.name}
+                  onChange={(e) => handleInputChange('name', e.target.value)}
                   data-aos="fade-right"
                 />
                 {errors.name && (
@@ -84,8 +132,8 @@ function Chance() {
                   className={`bg-white px-6 py-5 text-black rounded-md w-full ${
                     errors.email ? 'border-2 border-red-500' : ''
                   }`}
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
+                  value={values.email}
+                  onChange={(e) => handleInputChange('email', e.target.value)}
                   data-aos="fade-left"
                 />
                 {errors.email && (
@@ -95,16 +143,16 @@ function Chance() {
             </div>
 
             <div className='flex items-center justify-center'>
-            <button 
-  type="submit" 
-  className={`bg-black text-white px-16 transition-all duration-300 ease-in-out hover:bg-[#735cff] hover:border-b-2 border-b-2 border-transparent hover:border-black text-[12px] py-5 rounded-md text-center mt-6 ${
-    isSubmitting ? 'opacity-50 cursor-not-allowed' : ''
-  }`}
-  disabled={isSubmitting}
-  data-aos="fade-up"
->
-  {isSubmitting ? 'Submitting...' : 'Sign Up'}
-</button>
+              <button 
+                type="submit" 
+                className={`bg-black text-white px-16 transition-all duration-300 ease-in-out hover:bg-[#735cff] hover:border-b-2 border-b-2 border-transparent hover:border-black text-[12px] py-5 rounded-md text-center mt-6 ${
+                  isSubmitting ? 'opacity-50 cursor-not-allowed' : ''
+                }`}
+                disabled={isSubmitting}
+                data-aos="fade-up"
+              >
+                {isSubmitting ? 'Submitting...' : 'Sign Up'}
+              </button>
             </div>
           </form>
 

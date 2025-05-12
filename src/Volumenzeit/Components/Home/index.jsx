@@ -10,7 +10,7 @@ function Home() {
   useEffect(() => {
     AOS.init({
       duration: 1000,
-      once: true,
+     
     });
   }, []);
 
@@ -18,22 +18,22 @@ function Home() {
     <div className="bg-[#fafbff] w-full h-full ">
 
     
-    <div id="home" className=" w-full h-full    flex flex-col md:flex-row items-center justify-between px-4 md:px-20  font-poppins relative ">
+    <div id="home" className=" w-full h-full    flex flex-col md:flex-row items-center justify-between px-4 lg:px-20  font-poppins relative ">
       {/* Text Content */}
       <div className="flex-1 z-10  mt-6 md:mt-0  max-w-[1440px] 2xl:px-20 mx-auto w-full h-full  sm:py-12  text-center md:text-left">
-        <h1    className="text-[40px] md:text-6xl font-Space leading-[50px]    md:leading-[50px] max-w-[600px]  mb-4">
+        <h1    className="text-[40px] md:text-6xl font-Space leading-[50px]    md:leading-[50px] max-w-[600px]  mb-4" data-aos="fade-up">
           Find Your DREAM Watch
         </h1>
-        <p className="text-[#949494] text-sm font-poppins  leading-6 md:leading-7  max-w-[480px] md:max-w-[600px] mx-auto md:mx-0">
+        <p className="text-[#949494] text-sm font-poppins  leading-6 md:leading-7  max-w-[480px] md:max-w-[600px] mx-auto md:mx-0" data-aos="fade-up" data-aos-delay="50">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim facilisi
           elementum commodo ipsum. Aenean aenean adipiscing lect.
         </p>
 
-        <button className="bg-[#745cff] hover:bg-white hover:text-[#745cff] border-transparent hover:border-b-2   mt-6 sm:mt-12  hover:border-[#745cff] transition-all duration-300 text-sm  px-8 py-4 md:px-9 md:py-6 rounded-md text-white font-poppins mb-2">
+        <button className="bg-[#745cff] hover:bg-white hover:text-[#745cff] border-transparent hover:border-b-2   mt-6 sm:mt-12  hover:border-[#745cff] transition-all duration-300 text-sm  px-8 py-4 md:px-9 md:py-6 rounded-md text-white font-poppins mb-2" data-aos="fade-up" data-aos-delay="100">
           <Link to=''>Design Your Watch</Link>
         </button>
 
-        <div className="hidden w-full md:block ">
+        <div className="hidden w-full md:block " data-aos="fade-up" data-aos-delay="150">
           <SocialMediaIcons />
         </div>
       </div>
