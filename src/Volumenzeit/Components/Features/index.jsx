@@ -84,7 +84,7 @@ function Features() {
 
         {/* Mobile View */}
         <div className="xl:hidden ">
-          <div className="relative flex flex-col md:flex-row xs:items-center">
+          <div className="relative flex flex-col md:flex-row items-center justify-center">
             <div className="relative w-[300px] px-6 md:sticky md:top-[-200px]  mt-24 h-68 flex items-center justify-center md:mt-0" data-aos="fade-up">
               <img src={circle} alt="circle" className="absolute w-full  object-cover animate-spin-slow" />
               <img src={watchFeatures} alt="watch" className="w-48 h-48 object-contain" />

@@ -35,7 +35,7 @@ function Navbar() {
 		<div className=" bg-[#fafbff]      w-full  ">
 
 		
-		<div className="  w-full   mx-auto max-w-[1440px]   bg-[#fafbff]  overflow-hidden z-[1000]   lg:px-20  py-4 ">
+		<div className="  w-full   mx-auto max-w-[1440px]   bg-[#fafbff]  overflow-hidden z-[1000]   xl:px-20  py-4 ">
 			{/* Top part */}
 			<div className="flex justify-between px-4    items-center  w-full">
 				<Link to="/">
@@ -43,7 +43,7 @@ function Navbar() {
 				</Link>
 
 				{/* Desktop menu */}
-				<div className="hidden lg:flex items-center gap-10  font-poppins"  data-aos="fade-right" data-aos-delay="50">
+				<div className="hidden lg:flex items-center gap-10   font-poppins"  data-aos="fade-right" data-aos-delay="50">
 					<ul className="flex items-center    gap-10 text-[#745cff] text-[14px]">
 						{navLinks.map((item) => (
 							<li key={item.id}>
@@ -67,12 +67,15 @@ function Navbar() {
 					</div>
 				{/* Mobile menu (Hamburger and Button) */}
 				<div className="lg:hidden flex gap-5 items-center  ">
-					<div className="hidden sm:block">
-						<Button text='Sign up' />
-					</div>
+					
 					<div className="cursor-pointer" onClick={handleMenuToggle}>
 						{isMenuOpen ? <CrossIcon /> : <Hamburgericon />}
 					</div>
+
+					<div className="hidden sm:block">
+						<Button text='Sign up' />
+					</div>
+
 				</div>
 			</div>
 

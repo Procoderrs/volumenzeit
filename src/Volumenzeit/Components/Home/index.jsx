@@ -24,7 +24,7 @@ function Home() {
         <h1    className="text-[40px] md:text-6xl font-Space leading-[50px]    md:leading-[50px] max-w-[600px]  mb-4" data-aos="fade-up">
           Find Your DREAM Watch
         </h1>
-        <p className="text-[#949494] text-sm font-poppins  leading-6 md:leading-7  max-w-[480px] md:max-w-[600px] mx-auto md:mx-0" data-aos="fade-up" data-aos-delay="50">
+        <p className="text-[#949494] text-sm font-poppins font-light  leading-6 md:leading-7  max-w-[480px] md:max-w-[600px] mx-auto md:mx-0" data-aos="fade-up" data-aos-delay="50">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim facilisi
           elementum commodo ipsum. Aenean aenean adipiscing lect.
         </p>

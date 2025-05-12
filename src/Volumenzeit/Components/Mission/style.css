@@ -18,6 +18,7 @@
   position: relative;
 
 }
+
 .mission::before {
   content: "";
   position: absolute;
@@ -28,14 +29,17 @@
   height:120px;
   background: #745cff;
 }
-
-
 .mission::after {
   display: none; /* Hide by default for mobile */
 }
 
 /* Desktop styles (flex-row layout) */
 @media (min-width: 820px) { /* Match Tailwind's lg breakpoint */
+
+
+
+  
+
   .mission::after {
     content: "";
     position: absolute;
