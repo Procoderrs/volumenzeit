@@ -10,7 +10,7 @@ function Footer() {
         {/* Footer bottom bar */}
         <div className='mt-6 bg-[#fafbff] flex items-center justify-center w-full '  data-aos="fade-up">
           <p className='text-[10px] text-[#939393]  py-6 text-center m-0'>
-            © Copyright 2022 wolumenzeit - All rights reserved.
+            © Copyright 2022 volumenzeit - All rights reserved.
           </p>
         </div>
       </div>
