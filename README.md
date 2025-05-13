@@ -26,12 +26,18 @@ https://volumenzeit-delta.vercel.app/
 
 📂 Project Structure
 src/
-├── components/   # Reusable UI components
-├── pages/        # Page-level components
-├── App.js        # Main component
-├── index.js      # Entry point
-├── assets/       # Static files (images, icons)
-└── styles/       # Tailwind CSS and custom styles
+├── components/
+   # Reusable UI components
+├── pages/       
+ # Page-level components
+├── App.js       
+ # Main component
+├── index.js     
+ # Entry point
+├── assets/       
+# Static files (images, icons)
+└── styles/       
+# Tailwind CSS and custom styles
 
 
 
