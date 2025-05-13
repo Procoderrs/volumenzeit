@@ -1,10 +1,10 @@
 
-React Project with Tailwind CSS & AOS Animation
+# React Project with Tailwind CSS & AOS Animation
 
 
 This is a responsive React project built using React.js, Tailwind CSS, and the AOS (Animate On Scroll) animation library. It features a pre-loader, multiple reusable components, and form validation for user interaction.
 
-🚀 Features
+# Features
 
 
 ⚛️ React.js: Modular, component-based structure for scalable development.
@@ -24,24 +24,18 @@ https://volumenzeit-delta.vercel.app/
 
 
 
-📂 Project Structure
+# Project Structure
 src/
-├── components/
-   # Reusable UI components
-├── pages/       
- # Page-level components
-├── App.js       
- # Main component
-├── index.js     
- # Entry point
-├── assets/       
-# Static files (images, icons)
-└── styles/       
-# Tailwind CSS and custom styles
+├── components/   # Reusable UI components
+├── pages/        # Page-level components
+├── App.js        # Main component
+├── index.js      # Entry point
+├── assets/       # Static files (images, icons)
+└── styles/       # Tailwind CSS and custom styles
 
 
 
-🔧 Installation
+# Installation
 
 Clone the repository:
 git clone https://github.com/your-username/your-repo.git
@@ -54,7 +48,7 @@ npm start
 
 
 
-🚀 Deployment (Vercel)
+# Deployment (Vercel)
 
 To deploy this project on Vercel:
 
