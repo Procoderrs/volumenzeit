@@ -26,7 +26,7 @@ function Volumenzeit() {
   useEffect(()=>{
     const timer=setTimeout(()=>{
       setIsLoading(false)
-    },5000)
+    },2000)
 
     //cleanup function
     return()=>clearTimeout(timer)
