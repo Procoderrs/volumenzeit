@@ -81,7 +81,7 @@ function Navbar() {
 
 			{/* Side Menu (Drawer) for Mobile */}
 			<div
-				className={`fixed top-20 left-0 h-full w-full bg-white  shadow-md transform ${
+				className={`fixed top-14 left-0 h-full w-full bg-[#fafbff]  shadow-md transform ${
 					isMenuOpen ? "translate-x-0" : "-translate-x-full"
 				} transition-transform duration-500 ease-in-out z-50`}
 			>
